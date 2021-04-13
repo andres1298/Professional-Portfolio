@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../src/fonts/geosanslight-webfont.woff2') format('woff2'),
+         url('../src/fonts/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --primary: #082f4f;
+    --complementary: #7A4904;
+    --secundary: #e2e2e2;
+    --black: #0e1111;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MAIN BANNER STYLES */
+
+.banner{
+	/*Imagen utilizada como fondo en el banner*/
+  background-image: url("../img/banner.jpg");
+  /*El fondo se aplica de forma que cubra todo el espacio*/
+  background-size: cover;
+  /*altura vertical del banner*/
+  height: 95vh;
+  /*Se oculta el scroll lateral*/
+  overflow: hidden;
+ 
+  /*Se aplica un color amarillo suave*/
+  background-color: #ffffe0;
+  /*Sombra para mejorar*/
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+  /*posiciona el banner en el centro*/
+  background-position: center center;
+}
+
+.border1{
+    border: 1px solid red;
+}
+
+p{
+    font-size:20px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-padding{
+    padding-top: 250px;
+    padding-bottom: 150px;
+}
+
+.display-name{
+    width: 50%;
+    margin: 0 auto;
+    height: 75%;
+}
+
+.display-name p{
+    font-family: 'geosanslightregular';
+    text-align: left;
+}
+
+.display-name img{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.display-name .subtitle{
+    font-size: 200% ;
+}
+
+/* END OF MAIN BANNER STYLES */
+
+/* BIO STYLES */
+
+.bio-container{
+    background-color: var(--primary);
+    color: var(--secundary);
+    padding: 55px;
+    height: 400px;
+}
+
+.bio-container h2,h3{
+    font-family: 'geosanslightregular';
+    font-weight: bold;
+
+}
+
+.bio-container p{
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.wrapper .floating-container{
+    position: absolute;
+    top: 300px;
+    left: 13%;
+    border-radius: 10px;
+    color: var(--black);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.wrapper .floating-container .icon{
+    padding-top: 45px;
+    color: var(--complementary);
+}
+
+.wrapper .floating-container h2,h3{
+    color: var(--primary);
+}
+
+.wrapper .floating-container ul{
+    list-style-type: none;
+}
+/* END OF BIO STYLES */
+
+
+/* PROJECTS STYLES */
+.projects-container{
+    margin-top: 550px;
+}
+
+.projects-container h2{
+    font-family: 'geosanslightregular';
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.projects-container a{
+    color: var(--complementary);
+    text-decoration: underline;
+}
+
+.projects-container img{
+    border-radius: 10px;
+    height: 25vh; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+
+.projects-container button{
+    margin-top: 20px;
+}
+
+.projects-container .project{
+    border-radius: 15px;
+    border: 2px solid var(--complementary);
+}
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(8,47,79);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+    border-radius: 10px;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+/* END OF PROJECTS STYLES */
+
+
+/* CONTACT STYLES */
+
+.contact-container{
+    padding: 55px;
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
+.contact-container h2,h3{
+    font-family: 'geosanslightregular';
+    font-weight: bold;
+
+}
+
+.contact-container p{
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.btn-cancel{
+    background-color: var(--secundary);
+}
+
+.btn-send{
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
+.contact-container .download:hover{
+    background-color: var(--secundary);
+    color: var(--primary);
+    border: 2px solid var(--secundary);
+}
+
+/* END OF CONTACT STYLES */
