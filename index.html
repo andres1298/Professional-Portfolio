@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!--Css concreto-->
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <header class="header">
@@ -24,23 +25,44 @@
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar"
-                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
             <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Andrés Bonilla</a>
-                    </li>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
 
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biografia">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            Otros
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://xd.adobe.com/view/df1b62ef-71bb-47b2-839e-922c52180f78-8a48/?fullscreen"
+                                    target="_blank">Blog profesional</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- Left links -->
@@ -52,15 +74,15 @@
     <!-- END OF NAVIGATION BAR -->
 
     <!-- MAIN BANNER -->
-    <div class="container-fluid banner container-padding">
-        <div class="display-name">
+    <div class="banner container-padding">
+        <div class="display-name animate__animated animate__fadeInDown animate__slow">
             <div class="d-flex align-items-center mb-4 row h-100">
                 <div class="col-lg-6 col-sm-12 text-center">
                     <img src="img/isotipo-min.png" alt="Logo del portafolio web">
                 </div>
 
                 <div class="col-lg-6 col-sm-12 text-left">
-                    <p class="text-center text-white display-2 text-right">
+                    <p class="text-center text-white display-2 text-right ">
                         andrés bonilla
                     </p>
                     <p class="text-center text-white font-italic subtitle">
@@ -78,8 +100,8 @@
 
 <body>
     <!-- BIO -->
-    <div class="container-fluid bio-container wrapper">
-        <div class="w-50 mx-auto text-center">
+    <div class="container-fluid bio-container wrapper" id="biografia">
+        <div class="w-50 mx-auto text-center ">
             <h2>¡Hola! Mi nombre es Andrés</h2>
             <p>Soy un amante de los datos y la enseñanza. En este momento, estoy en proceso de obtener mi título como
                 Ingeniero de Software la Universidad Cenfotec, institución especializada en muchos
@@ -125,12 +147,13 @@
     </div>
     <!-- END OF BIO -->
 
-    <div class="container projects-container text-center mb-5">
+    <div class="container projects-container text-center mb-5" id="proyectos">
         <h2>Una pincelada de mis proyectos</h2>
         <p class="pb-5">Aprender para crear. Estos son algunos de los proyectos en los que he trabajado. <br><a
                 href="https://github.com/andres1298?tab=repositories" target="_blank">¡Presiona aquí si quieres conocer
                 aún más!</a></p>
         <div class="row row-cols-2 w-75 mx-auto text-center">
+
             <div class="col-sm-12 col-xs-12 col-lg-6">
 
                 <div class="hvrbox p-2">
@@ -150,30 +173,13 @@
             </div>
             <div class="col-sm-12 col-xs-12 col-lg-6">
                 <div class="hvrbox p-2">
-                    <img src="img/gemas-min.jpg" alt="Logo del proyecto Gemas" class="hvrbox-layer_bottom">
-                    <div class="hvrbox-layer_top">
-                        <div class="hvrbox-text">
-                            <p>Proyecto que permite a los padres de familia conocer más a fondo las instituciones
-                                educativas de Costa Rica.</p>
-                            <a href="https://github.com/andres1298/Everest2019" target="_blank">
-                                <button type="button" class="btn btn-outline-light btn" data-mdb-ripple-color="dark">
-                                    Ver más
-                                </button>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-xs-12 col-lg-6">
-                <div class="hvrbox p-2">
 
                     <img src="img/cenfotec-min.jpg" alt="Logo del proyecto Cursos Cenfotec" class="hvrbox-layer_bottom">
                     <div class="hvrbox-layer_top">
                         <div class="hvrbox-text">
                             <p>Proyecto que permite a los estudiantes de Cenfotec conocer su progreso en sus carreras de
                                 una forma sencilla.</p>
-                            <a href="https://github.com/andres1298/Cursos-Cenfotec" target="_blank">
+                            <a href="https://azure-walnut-word.glitch.me/" target="_blank">
                                 <button type="button" class="btn btn-outline-light btn" data-mdb-ripple-color="dark">
                                     Ver más
                                 </button>
@@ -183,6 +189,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-sm-12 col-xs-12 col-lg-6 ">
                 <div class="hvrbox p-2">
                     <img src="img/chess-min.jpg" alt="Logo del proyecto DB-Chess" class="hvrbox-layer_bottom">
@@ -200,10 +207,28 @@
                 </div>
             </div>
 
+            <div class="col-sm-12 col-xs-12 col-lg-6">
+                <div class="hvrbox p-2">
+                    <img src="img/gemas-min.jpg" alt="Logo del proyecto Gemas" class="hvrbox-layer_bottom">
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text">
+                            <p>Proyecto que permite a los padres de familia conocer más a fondo las instituciones
+                                educativas de Costa Rica.</p>
+                            <a href="https://github.com/andres1298/Everest2019" target="_blank">
+                                <button type="button" class="btn btn-outline-light btn" data-mdb-ripple-color="dark">
+                                    Ver más
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="container-fluid contact-container">
+    <div class="container-fluid contact-container" id="contacto">
         <div class="w-50 mx-auto text-center">
             <h2>¿Interesado o interesada en mis servicios?</h2>
             <p>Siempre estoy abierto a conversar sobre proyectos y nuevas aventuras. ¡Conversemos!</p>
@@ -212,11 +237,11 @@
 
                 <button type="button" class="btn btn-outline-light btn-rounded btn-lg download m-2"
                     data-mdb-toggle="modal" data-mdb-target="#Modal">
-                    Formulario de contacto
+                    Contacto
                 </button>
                 <a href="src/files/Andrés Bonilla - Curriculum vitae.pdf" download>
                     <button type="button" class="btn btn-outline-light btn-rounded btn-lg download m-2">
-                        Descarga mi Currículum Vitae
+                        Currículum Vitae
                     </button>
                 </a>
 
@@ -280,10 +305,90 @@
         </div>
     </div>
 
+    <div class="testimonials-clean" id="testimonios">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonios </h2>
+                <p class="text-center">Líderes ejemplares en mi carrera comparten sus experiencias:</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis
+                            leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle"
+                            src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300">
+                        <h5 class="name">Catalina Cortés</h5>
+                        <p class="title">Directora Educación Virtual</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis
+                            leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle"
+                            src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300">
+                        <h5 class="name">María Eugenia Ucrós</h5>
+                        <p class="title">Coordinadora Fundamentos de Programación</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis
+                            leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle"
+                            src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300">
+                        <h5 class="name">Alex André Solís</h5>
+                        <p class="title">Ingeniero de Software y Profesor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white manual-footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 ">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.facebook.com/andres.bonilla.software" target="_blank" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.instagram.com/andres.bonilla.software/" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/andres-bonilla-aguero/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/andres1298" target="_blank"
+                    role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #04192a;">
+            © 2021 Copyright: Andrés Bonilla Agüero
+        </div>
+        <!-- Copyright -->
+    </footer>
+
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script src="js/index.js" type="text/plain"></script>
     <script src="https://kit.fontawesome.com/f74ea012e7.js" crossorigin="anonymous"></script>
 </body>
 
